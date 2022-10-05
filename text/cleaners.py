@@ -49,8 +49,8 @@ def expand_abbreviations(text):
   return text
 
 
-def expand_numbers(text):
-  return normalize_numbers(text)
+# def expand_numbers(text):
+#   return normalize_numbers(text)
 
 
 def lowercase(text):
@@ -105,6 +105,7 @@ def english_cleaners2(text):
 
 def urdu_cleaners(text):
 
+  text = convert_to_ascii(text)
   phonemes = phonemize(text, language='ur', backend='espeak', strip=True)
   phonemes = collapse_whitespace(phonemes)
   return phonemes
