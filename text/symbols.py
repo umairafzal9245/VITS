@@ -10,13 +10,14 @@ from typing import FrozenSet
 
 _pad = '_'
 
+
 URDU_ALPHABETS: FrozenSet[str] = frozenset("آ أ ا ب پ ت ٹ ث ج چ ح خ د ڈ ذ ر ڑ ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن ں و ؤ ﺅ ہ ۂ ۃ ھ ء ی ئ ے ۓ".split())
 
 URDU_DIGITS: FrozenSet[str] = frozenset("۰ ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹".split())
 
 URDU_PUNCTUATIONS: FrozenSet[str] = frozenset("؟ ٪ ! ، ’ ‘ ' . / , - ؛ :".split())
 
-URDU_DIACRITICS: FrozenSet[str] = frozenset("\u064e \u064B \u0670 \u0650 \u064F \u064d \u0651 \u0654".split())
+URDU_DIACRITICS: FrozenSet[str] = frozenset("\u064e \u064B \u0670 \u0650 \u064F \u064d \u0651 \u0654 \u200c".split())
 
 URDU_EXTRA_CHARACTERS: FrozenSet[str] = frozenset("ﷲ ﷺ  ؓ  ؑ  ؒ  ؐ  ۖ".split())
 
